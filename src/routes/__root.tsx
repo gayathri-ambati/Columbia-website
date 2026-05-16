@@ -54,6 +54,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "Epitome Steel" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "Epitome Steel — Engineering Strength. Building the Future." },
+      { name: "twitter:title", content: "Epitome Steel — Engineering Strength. Building the Future." },
+      { property: "og:description", content: "World-class steel manufacturing and civil engineering. Precision-fabricated PEB buildings, structural steel, industrial sheds and roofing systems." },
+      { name: "twitter:description", content: "World-class steel manufacturing and civil engineering. Precision-fabricated PEB buildings, structural steel, industrial sheds and roofing systems." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d5fa3bf4-bbd7-41e5-b448-ac212996e9c7/id-preview-4227d9fd--2863ffb4-6575-4fc6-b5c7-8574fba84131.lovable.app-1778913799367.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d5fa3bf4-bbd7-41e5-b448-ac212996e9c7/id-preview-4227d9fd--2863ffb4-6575-4fc6-b5c7-8574fba84131.lovable.app-1778913799367.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
