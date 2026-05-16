@@ -57,7 +57,7 @@ function AboutPage() {
         </div>
       </section> */}
 
-   <MissionVisionPage />
+      <MissionVisionPage />
 
       {/* Timeline */}
       {/* <section className="py-20 bg-gradient-to-b from-white to-[#F8FAFC]">
