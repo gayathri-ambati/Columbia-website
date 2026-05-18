@@ -2,6 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { PageHero } from "@/components/site/PageHero";
 import { Cog, Layers, Factory, Hammer, Sparkles, Shield, ArrowRight } from "lucide-react";
+import Servicescards from "@/components/Servicescompo/Servicescards";
+import ProcessTimeline from "@/components/Servicescompo/ProcessTimeline";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -38,7 +40,7 @@ function ServicesPage() {
     <>
       <PageHero eyebrow="Services" title="An integrated engineering partner." subtitle="From the first sketch to the final weld, our teams own every phase of structural delivery." />
 
-      <section className="pb-16">
+      {/* <section className="pb-16">
         <div className="mx-auto max-w-7xl px-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {services.map((s, i) => (
             <motion.div key={s.t} initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: i * 0.05 }} className="glass-card p-6 group">
@@ -51,9 +53,11 @@ function ServicesPage() {
             </motion.div>
           ))}
         </div>
-      </section>
+      </section> */}
 
-      <section className="py-20 bg-gradient-to-b from-[#F8FAFC] to-white">
+      <Servicescards />
+
+      {/* <section className="py-20 bg-gradient-to-b from-[#F8FAFC] to-white">
         <div className="mx-auto max-w-7xl px-4">
           <div className="max-w-xl mx-auto text-center">
             <span className="chip">Process</span>
@@ -72,7 +76,10 @@ function ServicesPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
+
+      <ProcessTimeline />
+
     </>
   );
 }
