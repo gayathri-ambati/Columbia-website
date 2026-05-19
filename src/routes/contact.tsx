@@ -23,7 +23,7 @@ function ContactPage() {
   return (
     <>
       <PageHero eyebrow="Contact" title="Let's engineer something exceptional." subtitle="Tell us about your project. A senior engineer will respond within one business day." />
-      <section className="pb-24">
+      <section className="pb-24 mt-12">
         <div className="mx-auto max-w-7xl px-4 grid lg:grid-cols-12 gap-6">
           <div className="lg:col-span-5 space-y-4">
             {[

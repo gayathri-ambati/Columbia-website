@@ -148,14 +148,28 @@ function AboutPage() {
                   </motion.div>
                 ))}
               </div>
-              <div className="pt-6 flex items-center gap-4">
-                <div className="flex -space-x-2">
-                  {[1, 2, 3].map((i) => (
-                    <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-br from-[--brand-sky] to-[--brand] border-2 border-white" />
-                  ))}
-                </div>
-                <span className="text-sm text-muted-foreground">Trusted by 500+ engineering partners</span>
-              </div>
+             <div className="pt-6 flex items-center gap-4">
+  <div className="flex -space-x-2">
+    {[1, 2, 3].map((i) => (
+      <div
+        key={i}
+        className="w-8 h-8 rounded-full bg-gradient-to-br from-[--brand-sky] to-[--brand] border-2 border-white"
+      />
+    ))}
+  </div>
+
+  {/* Quotation Style Text */}
+  <div className="relative">
+   
+
+    <p className="relative text-sm md:text-base italic font-medium text-slate-700 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-xl border border-slate-200 shadow-sm">
+       “ Trusted by <span className="font-bold text-[--brand-deep] text-gradient">500+</span>{" "}
+      Engineering Partners Worldwide ”
+    </p>
+
+   
+  </div>
+          </div>
             </motion.div>
           </div>
         </div>
