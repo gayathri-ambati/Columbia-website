@@ -166,11 +166,28 @@ export function Footer() {
         <div className="divider-line my-10" />
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
           <div>© {new Date().getFullYear()} Epitome Steel Pvt Ltd. All rights reserved.</div>
-          <div className="flex gap-5">
-            <a href="#" className="hover:text-[--brand-deep]">Privacy</a>
-            <a href="#" className="hover:text-[--brand-deep]">Terms</a>
-            <a href="#" className="hover:text-[--brand-deep]">Sitemap</a>
-          </div>
+         <div className="flex gap-5">
+     <Link
+    to="/PrivacyPolicy"
+    className="hover:text-[--brand-deep] transition"
+  >
+    Privacy Policy
+      </Link>
+
+     <Link
+    to="/TermsConditions"
+    className="hover:text-[--brand-deep] transition"
+  >
+    Terms & Conditions
+    </Link>
+
+      {/* <Link
+    to="/sitemap"
+    className="hover:text-[--brand-deep] transition"
+  >
+    Sitemap
+     </Link> */}
+        </div>
         </div>
       </div>
     </footer>

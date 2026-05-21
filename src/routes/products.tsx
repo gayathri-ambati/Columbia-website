@@ -464,16 +464,45 @@ function ProductsPage() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
             
             {/* Badge overlay */}
-            <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
-                  <CheckCircle className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <p className="text-xs text-gray-500">Quality Certified</p>
-                  <p className="text-sm font-semibold text-gray-800">100% Tested & Approved</p>
-                </div>
-              </div>
+            <div className="absolute bottom-4 left-4 right-4">
+  <a
+    href="https://wa.me/919999999999"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="group flex items-center gap-4 rounded-2xl bg-white/95 backdrop-blur-md p-4 shadow-2xl border border-green-100 hover:scale-[1.02] hover:shadow-green-200/60 transition-all duration-300"
+  >
+    
+    {/* WhatsApp Icon */}
+    <div className="relative flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-green-400 to-green-600 shadow-lg">
+      
+      {/* Pulse Ring */}
+      <span className="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-30 animate-ping"></span>
+
+      {/* Icon */}
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 32 32"
+        fill="currentColor"
+        className="w-8 h-8 text-white relative z-10"
+      >
+        <path d="M19.11 17.2c-.29-.15-1.69-.83-1.95-.92-.26-.1-.45-.15-.64.15-.19.29-.74.92-.91 1.11-.17.19-.34.22-.63.07-.29-.15-1.22-.45-2.32-1.43-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.43-.51.14-.17.19-.29.29-.49.1-.19.05-.37-.02-.52-.07-.15-.64-1.54-.88-2.11-.23-.56-.47-.48-.64-.49h-.55c-.19 0-.49.07-.74.34-.26.26-.98.96-.98 2.35s1 2.73 1.14 2.92c.15.19 1.97 3 4.77 4.08.67.29 1.2.46 1.61.59.67.21 1.28.18 1.76.11.54-.08 1.69-.69 1.93-1.36.24-.67.24-1.25.17-1.36-.07-.11-.26-.18-.55-.33z" />
+        <path d="M16.01 3C8.84 3 3 8.82 3 15.99c0 2.54.74 5.01 2.13 7.12L3 29l6.08-2.05a12.92 12.92 0 006.93 2.02h.01C23.18 28.97 29 23.15 29 16S23.18 3 16.01 3zm0 23.69h-.01a10.7 10.7 0 01-5.45-1.49l-.39-.23-3.61 1.22 1.18-3.52-.25-.41a10.67 10.67 0 1118.53-7.27c0 5.89-4.79 10.7-10.69 10.7z" />
+      </svg>
+    </div>
+
+    {/* Content */}
+    <div className="flex-1">
+     
+
+      <p className="text-sm font-bold text-slate-800">
+        Quality Certified
+      </p>
+
+      <p className="text-xs text-slate-500 mt-1">
+        100% Tested & Approved
+      </p>
+    </div>
+  </a>
             </div>
           </motion.div>
 
