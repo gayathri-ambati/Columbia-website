@@ -7,6 +7,7 @@ import engineerImg from "@/assets/engineer.jpg";
 import LeadershipPage from "@/components/Aboutcompo/LeadershipPage";
 import TimelinePage from "@/components/Aboutcompo/TimelinePage";
 import MissionVisionPage from "@/components/Aboutcompo/MissionVisionPage";
+import AboutEpitome from "@/components/Aboutcompo/AboutEpitome";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -58,6 +59,8 @@ function AboutPage() {
       </section> */}
 
       <MissionVisionPage />
+
+      <AboutEpitome />
 
       {/* Timeline */}
       {/* <section className="py-20 bg-gradient-to-b from-white to-[#F8FAFC]">

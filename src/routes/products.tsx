@@ -107,6 +107,8 @@ import shed from "@/assets/product-shed.jpg";
 import peb from "@/assets/project-peb.jpg";
 import factory from "@/assets/factory-aerial.jpg";
 import eng from "@/assets/engineer.jpg";
+import ProductSection from "@/components/ProductsCompo/ProductsCards";
+import ProductsCards from "@/components/ProductsCompo/ProductsCards";
 
 export const Route = createFileRoute("/products")({
   head: () => ({
@@ -207,9 +209,9 @@ function ProductsPage() {
         subtitle="A complete catalogue of structural steel, PEB systems and civil components — manufactured to global standards and delivered ready for site."
       />
 
-      <section className="pb-24">
+      {/* <section className="pb-24">
         <div className="mx-auto max-w-7xl px-4">
-          {/* FILTER BUTTONS - Centered */}
+         
         <div className="flex flex-wrap justify-center gap-3 mb-12 mt-12">
   {cats.map((c) => {
     return (
@@ -228,7 +230,7 @@ function ProductsPage() {
   })}
       </div>
 
-          {/* PRODUCT GRID */}
+        
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {filtered.map((p, i) => (
               <motion.article
@@ -268,7 +270,9 @@ function ProductsPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
+
+     < ProductsCards />
 
       {/* SECTION 1: KEY FEATURES */}
       <section className="py-20 relative overflow-hidden">
