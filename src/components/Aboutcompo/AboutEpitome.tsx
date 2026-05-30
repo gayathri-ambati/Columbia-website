@@ -61,10 +61,10 @@ export default function AboutEpitome() {
 
             <div className="absolute bottom-6 left-6 rounded-2xl bg-white p-5 shadow-xl">
               <h4 className="bg-gradient-to-r from-cyan-500 to-blue-600 bg-clip-text text-xl font-bold text-transparent">
-                End-to-End Steel Solutions
+               WE ALSO UNDERTAKE
               </h4>
               <p className="mt-1 text-sm text-gray-600">
-                Design • Fabrication • Supply • Installation
+                Fabrication Job Work
               </p>
             </div>
           </div>
