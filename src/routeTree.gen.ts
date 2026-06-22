@@ -27,7 +27,7 @@ import { Route as TermsConditionsRouteImport } from './routes/TermsConditions'
 import { Route as PrivacyPolicyRouteImport } from './routes/PrivacyPolicy'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as DashboardSubmissionsRouteImport } from './routes/dashboard/submissions'
-import { Route as AdminContactsRouteImport } from './routes/admin/contacts'
+import { Route as AdminAdmincontactsRouteImport } from './routes/admin/admincontacts'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
@@ -119,9 +119,9 @@ const DashboardSubmissionsRoute = DashboardSubmissionsRouteImport.update({
   path: '/submissions',
   getParentRoute: () => DashboardRoute,
 } as any)
-const AdminContactsRoute = AdminContactsRouteImport.update({
-  id: '/admin/contacts',
-  path: '/admin/contacts',
+const AdminAdmincontactsRoute = AdminAdmincontactsRouteImport.update({
+  id: '/admin/admincontacts',
+  path: '/admin/admincontacts',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -143,7 +143,7 @@ export interface FileRoutesByFullPath {
   '/projects': typeof ProjectsRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/admin/contacts': typeof AdminContactsRoute
+  '/admin/admincontacts': typeof AdminAdmincontactsRoute
   '/dashboard/submissions': typeof DashboardSubmissionsRoute
 }
 export interface FileRoutesByTo {
@@ -164,7 +164,7 @@ export interface FileRoutesByTo {
   '/projects': typeof ProjectsRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/admin/contacts': typeof AdminContactsRoute
+  '/admin/admincontacts': typeof AdminAdmincontactsRoute
   '/dashboard/submissions': typeof DashboardSubmissionsRoute
 }
 export interface FileRoutesById {
@@ -186,7 +186,7 @@ export interface FileRoutesById {
   '/projects': typeof ProjectsRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/admin/contacts': typeof AdminContactsRoute
+  '/admin/admincontacts': typeof AdminAdmincontactsRoute
   '/dashboard/submissions': typeof DashboardSubmissionsRoute
 }
 export interface FileRouteTypes {
@@ -209,7 +209,7 @@ export interface FileRouteTypes {
     | '/projects'
     | '/services'
     | '/sitemap.xml'
-    | '/admin/contacts'
+    | '/admin/admincontacts'
     | '/dashboard/submissions'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -230,7 +230,7 @@ export interface FileRouteTypes {
     | '/projects'
     | '/services'
     | '/sitemap.xml'
-    | '/admin/contacts'
+    | '/admin/admincontacts'
     | '/dashboard/submissions'
   id:
     | '__root__'
@@ -251,7 +251,7 @@ export interface FileRouteTypes {
     | '/projects'
     | '/services'
     | '/sitemap.xml'
-    | '/admin/contacts'
+    | '/admin/admincontacts'
     | '/dashboard/submissions'
   fileRoutesById: FileRoutesById
 }
@@ -273,7 +273,7 @@ export interface RootRouteChildren {
   ProjectsRoute: typeof ProjectsRoute
   ServicesRoute: typeof ServicesRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
-  AdminContactsRoute: typeof AdminContactsRoute
+  AdminAdmincontactsRoute: typeof AdminAdmincontactsRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -404,11 +404,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DashboardSubmissionsRouteImport
       parentRoute: typeof DashboardRoute
     }
-    '/admin/contacts': {
-      id: '/admin/contacts'
-      path: '/admin/contacts'
-      fullPath: '/admin/contacts'
-      preLoaderRoute: typeof AdminContactsRouteImport
+    '/admin/admincontacts': {
+      id: '/admin/admincontacts'
+      path: '/admin/admincontacts'
+      fullPath: '/admin/admincontacts'
+      preLoaderRoute: typeof AdminAdmincontactsRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -444,7 +444,7 @@ const rootRouteChildren: RootRouteChildren = {
   ProjectsRoute: ProjectsRoute,
   ServicesRoute: ServicesRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
-  AdminContactsRoute: AdminContactsRoute,
+  AdminAdmincontactsRoute: AdminAdmincontactsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

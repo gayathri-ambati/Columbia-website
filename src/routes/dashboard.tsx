@@ -320,7 +320,7 @@ function DashboardPage() {
                       </div>
 
                       <button
-                        onClick={() => navigate({ to: "/admin/contacts" })}
+                        onClick={() => navigate({ to: "/admin/admincontacts" })}
                         className="text-sm text-cyan-600 hover:text-cyan-700 font-medium flex items-center gap-1 whitespace-nowrap"
                       >
                         View Details
@@ -344,7 +344,7 @@ function DashboardPage() {
 
               <div className="text-center pt-4">
                 <button
-                  onClick={() => navigate({ to: "/admin/contacts" })}
+                  onClick={() => navigate({ to: "/admin/admincontacts" })}
                   className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-xl font-medium hover:shadow-lg transition-all duration-300 hover:scale-[1.02]"
                 >
                   View All Submissions

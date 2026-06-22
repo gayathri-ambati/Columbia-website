@@ -1,3 +1,4 @@
+// frontend/src/components/admin/AdminHeader.tsx
 import { Link, useRouterState, useNavigate } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
 import {
@@ -9,7 +10,9 @@ import {
   X,
   ChevronDown,
   Home,
+  Mail,
   Users,
+  Settings,
 } from "lucide-react";
 import logo from "../../assets/newlogo.png";
 
@@ -32,7 +35,7 @@ export function AdminHeader() {
     localStorage.removeItem("isAuthenticated");
     localStorage.removeItem("token");
     localStorage.removeItem("adminToken");
-    navigate({ to: "/" });
+    navigate({ to: "/login" });
   };
 
   return (
@@ -58,7 +61,7 @@ export function AdminHeader() {
           </div>
 
           {/* Navigation - Desktop */}
-          <nav className="hidden lg:flex items-center gap-2">
+          <nav className="hidden lg:flex items-center gap-1">
             <Link
               to="/dashboard"
               className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
@@ -71,24 +74,26 @@ export function AdminHeader() {
               Dashboard
             </Link>
             <Link
-              to="/admin/contacts"
+              to="/admin/admincontacts"
               className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
-                path === "/admin/contacts"
+                path === "/admin/admincontacts"
                   ? "bg-cyan-50 text-cyan-700"
                   : "text-slate-600 hover:text-slate-900 hover:bg-slate-50"
               }`}
             >
-              <Users className={`w-4 h-4 ${path === "/admin/contacts" ? "text-cyan-600" : "text-slate-400"}`} />
+              <Mail className={`w-4 h-4 ${path === "/admin/admincontacts" ? "text-cyan-600" : "text-slate-400"}`} />
               Contacts
+              {/* Optional: Show badge with count */}
+              <span className="ml-1 bg-cyan-100 text-cyan-700 text-xs px-2 py-0.5 rounded-full">12</span>
             </Link>
           </nav>
 
           {/* Right Side */}
           <div className="flex items-center gap-2">
             {/* Notifications */}
-            <button className="p-2 rounded-lg hover:bg-slate-100 transition-colors relative">
+            <button className="relative p-2 rounded-lg hover:bg-slate-100 transition-colors">
               <Bell className="w-5 h-5 text-slate-600" />
-              <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-red-500 rounded-full"></span>
+              <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
             </button>
 
             {/* User Menu */}
@@ -98,7 +103,13 @@ export function AdminHeader() {
                 className="flex items-center gap-2 px-3 py-1.5 rounded-lg hover:bg-slate-100 transition-colors"
               >
                 <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-white font-semibold text-sm">
-                  {user?.email?.charAt(0).toUpperCase() || "U"}
+                  {user?.email?.charAt(0).toUpperCase() || "A"}
+                </div>
+                <div className="hidden sm:block text-left">
+                  <p className="text-sm font-medium text-slate-900 leading-tight">
+                    {user?.email?.split('@')[0] || "Admin"}
+                  </p>
+                  <p className="text-xs text-slate-500 leading-tight">Administrator</p>
                 </div>
                 <ChevronDown className={`w-4 h-4 text-slate-400 transition-transform duration-200 ${
                   userMenuOpen ? "rotate-180" : ""
@@ -107,36 +118,42 @@ export function AdminHeader() {
 
               {/* Dropdown */}
               {userMenuOpen && (
-                <div className="absolute right-0 mt-2 w-56 bg-white rounded-xl shadow-lg border border-slate-200 py-1">
+                <div className="absolute right-0 mt-2 w-56 bg-white rounded-xl shadow-lg border border-slate-200 py-1 z-50">
+                  {/* User Info */}
                   <div className="px-4 py-3 border-b border-slate-100">
                     <p className="text-sm font-medium text-slate-900">{user?.email}</p>
                     <p className="text-xs text-slate-500">Administrator</p>
                   </div>
                   
+                  {/* Navigation Links */}
                   <div className="py-1">
                     <Link
                       to="/dashboard"
+                      onClick={() => setUserMenuOpen(false)}
                       className="w-full flex items-center gap-3 px-4 py-2 hover:bg-slate-50 transition-colors text-sm text-slate-700"
                     >
-                      <LayoutDashboard className="w-4 h-4" />
+                      <LayoutDashboard className="w-4 h-4 text-slate-400" />
                       Dashboard
                     </Link>
                     <Link
-                      to="/admin/contacts"
+                      to="/admin/admincontacts"
+                      onClick={() => setUserMenuOpen(false)}
                       className="w-full flex items-center gap-3 px-4 py-2 hover:bg-slate-50 transition-colors text-sm text-slate-700"
                     >
-                      <Users className="w-4 h-4" />
+                      <Mail className="w-4 h-4 text-slate-400" />
                       Contacts
                     </Link>
                     <Link
                       to="/"
+                      onClick={() => setUserMenuOpen(false)}
                       className="w-full flex items-center gap-3 px-4 py-2 hover:bg-slate-50 transition-colors text-sm text-slate-700"
                     >
-                      <Home className="w-4 h-4" />
+                      <Home className="w-4 h-4 text-slate-400" />
                       View Site
                     </Link>
                   </div>
 
+                  {/* Logout */}
                   <div className="border-t border-slate-100 pt-1">
                     <button
                       onClick={handleLogout}
@@ -156,11 +173,14 @@ export function AdminHeader() {
       {/* Mobile Menu */}
       {mobileOpen && (
         <div className="lg:hidden fixed inset-0 z-50 bg-black/50">
-          <div className="w-64 h-full bg-white shadow-xl p-4">
+          <div className="w-72 h-full bg-white shadow-xl p-4 overflow-y-auto">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center gap-2">
                 <img src={logo} alt="Logo" className="w-8 h-8 object-contain" />
-                <span className="text-sm font-bold text-slate-900">Admin Panel</span>
+                <div>
+                  <span className="text-sm font-bold text-slate-900 block">Epitome Steel</span>
+                  <span className="text-xs text-slate-500">Admin Panel</span>
+                </div>
               </div>
               <button
                 onClick={() => setMobileOpen(false)}
@@ -168,6 +188,21 @@ export function AdminHeader() {
               >
                 <X className="w-5 h-5" />
               </button>
+            </div>
+
+            {/* User Info in Mobile */}
+            <div className="mb-6 p-3 bg-slate-50 rounded-xl">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-white font-semibold">
+                  {user?.email?.charAt(0).toUpperCase() || "A"}
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-slate-900">
+                    {user?.email?.split('@')[0] || "Admin"}
+                  </p>
+                  <p className="text-xs text-slate-500">{user?.email}</p>
+                </div>
+              </div>
             </div>
 
             <div className="space-y-1">
@@ -184,27 +219,35 @@ export function AdminHeader() {
                 Dashboard
               </Link>
               <Link
-                to="/admin/contacts"
+                to="/admin/admincontacts"
                 onClick={() => setMobileOpen(false)}
                 className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
-                  path === "/admin/contacts"
+                  path === "/admin/admincontacts"
                     ? "bg-cyan-50 text-cyan-700"
                     : "text-slate-600 hover:text-slate-900 hover:bg-slate-50"
                 }`}
               >
-                <Users className={`w-4 h-4 ${path === "/admin/contacts" ? "text-cyan-600" : "text-slate-400"}`} />
+                <Mail className={`w-4 h-4 ${path === "/admin/admincontacts" ? "text-cyan-600" : "text-slate-400"}`} />
                 Contacts
               </Link>
+              <Link
+                to="/"
+                onClick={() => setMobileOpen(false)}
+                className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors"
+              >
+                <Home className="w-4 h-4 text-slate-400" />
+                View Site
+              </Link>
+            </div>
 
-              <div className="border-t border-slate-200 mt-4 pt-4">
-                <button
-                  onClick={handleLogout}
-                  className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-red-600 hover:bg-red-50 transition-colors"
-                >
-                  <LogOut className="w-4 h-4" />
-                  Logout
-                </button>
-              </div>
+            <div className="border-t border-slate-200 mt-6 pt-4">
+              <button
+                onClick={handleLogout}
+                className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-red-600 hover:bg-red-50 transition-colors"
+              >
+                <LogOut className="w-4 h-4" />
+                Logout
+              </button>
             </div>
           </div>
         </div>
