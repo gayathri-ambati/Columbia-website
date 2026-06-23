@@ -1990,6 +1990,8 @@
 
 
 
+
+
 import { useState, useEffect } from "react";
 import { Link } from "@tanstack/react-router";
 import { motion, AnimatePresence } from "framer-motion";
@@ -2031,12 +2033,12 @@ const slides = [
       link: "/projects",
       icon: ChevronRight,
     },
-    badge: {
-      icon: Zap,
-      text: "Live · Bay 4",
-      subtext: "Robotic weld cell · 99.4% uptime",
-      color: "brand-deep",
-    },
+    // badge: {
+    //   icon: Zap,
+    //   text: "Live · Bay 4",
+    //   subtext: "Robotic weld cell · 99.4% uptime",
+    //   color: "brand-deep",
+    // },
     stats: [
       { v: 28, s: "+", l: "Years of Engineering" },
       { v: 1200, s: "+", l: "Projects Delivered" },
@@ -2194,7 +2196,7 @@ export default function Hero() {
 
   const CurrentCta1Icon = slides[currentSlide].cta1.icon;
   const CurrentCta2Icon = slides[currentSlide].cta2.icon;
-  const CurrentBadgeIcon = slides[currentSlide].badge.icon;
+  // const CurrentBadgeIcon = slides[currentSlide].badge.icon;
 
   return (
     <section className="relative pt-32 pb-24 sm:pt-40 sm:pb-32 overflow-hidden">
@@ -2309,7 +2311,7 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-t from-white/40 via-transparent to-white/10" />
 
               {/* BADGE */}
-              <AnimatePresence mode="wait">
+              {/* <AnimatePresence mode="wait">
                 <motion.div
                   key={`badge-${currentSlide}`}
                   variants={badgeVariants}
@@ -2328,7 +2330,7 @@ export default function Hero() {
                     {slides[currentSlide].badge.subtext}
                   </div>
                 </motion.div>
-              </AnimatePresence>
+              </AnimatePresence> */}
 
               {/* MOBILE NAV */}
               <button

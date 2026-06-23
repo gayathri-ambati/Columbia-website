@@ -331,6 +331,7 @@ import ProjectVideoShowcase from "@/components/site/ProjectVideoShowcase";
 import FactoryTour from "@/components/site/FactoryTour";
 import VideoTestimonials from "@/components/site/VideoTestimonials";
 import BehindTheScenes from "@/components/site/BehindTheScenes";
+import EngineeringStructureSection from "@/components/site/EngineeringStructureSection";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -353,6 +354,7 @@ function Home() {
       {/* <LogoSlider /> */}
       <ProductsSection />
       <ServicesSection />
+      <EngineeringStructureSection />
       
       {/* Video Sections */}
       {/* <ProcessVideo /> */}
