@@ -277,13 +277,13 @@ function LoginPage() {
               )}
             </button>
 
-            <div className="mt-6 p-4 rounded-xl bg-cyan-50 border border-cyan-200">
+            {/* <div className="mt-6 p-4 rounded-xl bg-cyan-50 border border-cyan-200">
               <p className="text-xs text-cyan-700 text-center">
                 <span className="font-semibold">🔑 Demo Credentials:</span><br />
                 <span className="font-mono">Username: admin</span><br />
                 <span className="font-mono">Password: admin123</span>
               </p>
-            </div>
+            </div> */}
           </form>
 
           <p className="mt-8 text-center text-sm text-slate-600">
