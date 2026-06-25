@@ -132,18 +132,31 @@
 
 
 
-import fabricationImg from "@/assets/service1.jpg";
-import cuttingImg from "@/assets/service2.jpg";
-import handlingImg from "@/assets/service3.jpg";
-import service5 from "@/assets/service4.jpg";
-import service6 from "@/assets/service1.jpg";
+
+
+import fabricationImg from "@/assets/stateofartmanufacturing1.jpg";
+import cuttingImg from "@/assets/stateofartmanufacturing2.jpg";
+import handlingImg from "@/assets/stateofartmanufacturing3.jpg";
+import service5 from "@/assets/stateofartmanufacturing4.jpg";
+import service6 from "@/assets/stateofartmanufacturing5.jpg";
+import service7 from "@/assets/stateofartmanufacturing6.jpg";
+import service8 from "@/assets/stateofartmanufacturing7.jpg";
+import service9 from "@/assets/stateofartmanufacturing8.jpg";
+import service10 from "@/assets/stateofartmanufacturing9.jpg";
+import service11 from "@/assets/stateofartmanufacturing10.jpg";
 
 const images = [
   fabricationImg,
   cuttingImg,
   handlingImg,
   service5,
+  service5,
   service6,
+  service7,
+  service8,
+  service9,
+  service10,
+  service11,
 ];
 
 export default function InfrastructureSection() {

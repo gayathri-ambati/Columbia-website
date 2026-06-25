@@ -450,43 +450,40 @@ function IndustriesPage() {
 
     
       {/* Geographic Presence */}
-      <section className="py-20 bg-gradient-to-r from-blue-900 to-blue-800 text-white">
-        <div className="mx-auto max-w-7xl px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              Pan-India Delivery Network
-            </h2>
-            <p className="text-blue-200 max-w-2xl mx-auto">
-              Serving clients across all major industrial regions
-            </p>
-          </div>
+     <section className="py-20 bg-gradient-to-r from-blue-900 to-blue-800 text-white">
+  <div className="mx-auto max-w-7xl px-4">
+    <div className="text-center mb-12">
+      <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
+        Pan-India Delivery Network
+      </h2>
+      <p className="text-blue-200 max-w-2xl mx-auto">
+        Serving clients across all major industrial regions
+      </p>
+    </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {[
-              { region: "North India", cities: "Delhi NCR, Chandigarh, Jaipur, Lucknow", projects: "120+" },
-              { region: "South India", cities: "Bangalore, Chennai, Hyderabad, Coimbatore", projects: "150+" },
-              { region: "East India", cities: "Kolkata, Bhubaneswar, Guwahati, Patna", projects: "80+" },
-              { region: "West India", cities: "Mumbai, Pune, Ahmedabad, Surat", projects: "180+" }
-            ].map((region, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1 }}
-                viewport={{ once: true }}
-                className="bg-white/10 backdrop-blur-sm rounded-xl p-5 text-center hover:bg-white/20 transition-all"
-              >
-                <div className="text-lg font-bold mb-2">{region.region}</div>
-                <div className="text-xs text-blue-200 mb-3">{region.cities}</div>
-                <div className="inline-flex items-center gap-1 px-3 py-1 bg-white/20 rounded-full">
-                  <Briefcase className="w-3 h-3" />
-                  <span className="text-sm font-semibold">{region.projects} Projects</span>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+      {[
+        { region: "North India", cities: "Delhi NCR, Chandigarh, Jaipur, Lucknow" },
+        { region: "South India", cities: "Bangalore, Chennai, Hyderabad, Coimbatore" },
+        { region: "East India", cities: "Kolkata, Bhubaneswar, Guwahati, Patna" },
+        { region: "West India", cities: "Mumbai, Pune, Ahmedabad, Surat" }
+      ].map((region, i) => (
+        <motion.div
+          key={i}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: i * 0.1 }}
+          viewport={{ once: true }}
+          className="bg-white/10 backdrop-blur-sm rounded-xl p-5 text-center hover:bg-white/20 transition-all"
+        >
+          <div className="text-lg font-bold mb-2">{region.region}</div>
+          <div className="text-xs text-blue-200">{region.cities}</div>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>
+      
 
         {/* Why Choose Us Section */}
      <section

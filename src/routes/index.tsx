@@ -360,7 +360,7 @@ function Home() {
       {/* <ProcessVideo /> */}
       <ProjectVideoShowcase />
       
-      <ManufacturingSection />
+      {/* <ManufacturingSection /> */}
       
       {/* More Video Sections */}
       {/* <FactoryTour /> */}

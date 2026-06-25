@@ -95,7 +95,7 @@ const services = [
     d: "Pan-India installation and global erection with project controls.", 
     i: Hammer,
     color: "#F59E0B",
-    stat: "42 countries"
+    stat: "Pan India"
   },
   { 
     t: "Design Consultancy", 

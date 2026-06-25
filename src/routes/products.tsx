@@ -399,15 +399,15 @@ function ProductsPage() {
       </section>
 
       {/* SECTION 3: CERTIFICATIONS */}
-   <section className="py-20 relative overflow-hidden">
-  {/* Background decoration */}
+    {/* <section className="py-20 relative overflow-hidden">
+ 
   <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-slate-50 -z-10" />
   <div className="absolute top-0 right-0 w-96 h-96 bg-blue-100 rounded-full blur-3xl opacity-30 -z-10" />
   <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-100 rounded-full blur-3xl opacity-30 -z-10" />
   
   <div className="mx-auto max-w-7xl px-4">
     <div className="flex flex-col lg:flex-row items-center gap-12">
-      {/* Left Content */}
+  
       <div className="flex-1">
         <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-2 rounded-full mb-6">
           <Award className="w-4 h-4" />
@@ -449,10 +449,10 @@ function ProductsPage() {
        
       </div>
 
-      {/* Right Side - Image Grid */}
+     
       <div className="flex-1">
         <div className="relative">
-          {/* Main Image */}
+         
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -467,7 +467,7 @@ function ProductsPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
             
-            {/* Badge overlay */}
+         
             <div className="absolute bottom-4 left-4 right-4">
   <a
     href="https://wa.me/919999999999"
@@ -476,13 +476,13 @@ function ProductsPage() {
     className="group flex items-center gap-4 rounded-2xl bg-white/95 backdrop-blur-md p-4 shadow-2xl border border-green-100 hover:scale-[1.02] hover:shadow-green-200/60 transition-all duration-300"
   >
     
-    {/* WhatsApp Icon */}
+    
     <div className="relative flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-green-400 to-green-600 shadow-lg">
       
-      {/* Pulse Ring */}
+  
       <span className="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-30 animate-ping"></span>
 
-      {/* Icon */}
+   
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 32 32"
@@ -494,7 +494,7 @@ function ProductsPage() {
       </svg>
     </div>
 
-    {/* Content */}
+   
     <div className="flex-1">
      
 
@@ -510,7 +510,7 @@ function ProductsPage() {
             </div>
           </motion.div>
 
-           {/* Additional trust indicator */}
+          
         <div className="mt-8 pt-6 border-t border-gray-200">
           <div className="flex items-center gap-6">
             <div className="flex -space-x-2">
@@ -526,7 +526,7 @@ function ProductsPage() {
           </div>
         </div>
 
-          {/* Floating small images */}
+          
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -542,7 +542,7 @@ function ProductsPage() {
       </div>
     </div>
   </div>
-  </section>
+    </section> */}
 
   
       {/* SECTION 5: CTA */}

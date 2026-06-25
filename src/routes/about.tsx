@@ -202,7 +202,7 @@ function AboutPage() {
       </p>
 
       {/* Features */}
-      <div className="grid md:grid-cols-2 gap-5 max-w-4xl mx-auto pt-6">
+      {/* <div className="grid md:grid-cols-2 gap-5 max-w-4xl mx-auto pt-6">
         {[
           "Automatic Beam Welding / Heavy Fabrication Line",
           "Robotic Welding Systems",
@@ -228,7 +228,7 @@ function AboutPage() {
             </span>
           </motion.div>
         ))}
-      </div>
+      </div> */}
 
       {/* Bottom Trust Badge */}
       <div className="pt-8 flex justify-center">
