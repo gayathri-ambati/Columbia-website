@@ -72,7 +72,7 @@ import shedImg from "@/assets/Mezzaninefloor.jpg";
 import roofingImg from "@/assets/commercialsteelbuilding.jpg";
 
 const products = [
-  { t: "Structural Steel", d: "Heavy fabricated beams, columns and trusses to IS, ASTM, EN standards.", img: beamsImg, icon: Layers },
+  { t: "Supply Of Steel", d: "Heavy fabricated beams, columns and trusses to IS, ASTM, EN standards.", img: beamsImg, icon: Layers },
   { t: "PEB Buildings", d: "Pre-engineered structures with optimal span, speed and cost performance.", img: pebImg, icon: Building2 },
   { t: "Mezzanine Flooring system", d: "High-bay sheds for warehousing, manufacturing and logistics.", img: shedImg, icon: Boxes },
   { t: "Commercial Steel Buildings", d: "Pre Engineered commercial  steel building structures wijt optimum cost and reduced time frames for construction. ", img: roofingImg, icon: Hammer },

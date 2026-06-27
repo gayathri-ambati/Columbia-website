@@ -150,7 +150,7 @@ const images = [
   cuttingImg,
   handlingImg,
   service5,
-  service5,
+
   service6,
   service7,
   service8,

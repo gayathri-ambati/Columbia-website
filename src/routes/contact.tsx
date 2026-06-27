@@ -1020,7 +1020,20 @@ function ContactPage() {
           {/* Contact Info */}
           <div className="lg:col-span-5 space-y-4">
             {[
-              { i: MapPin, t: "Head Office", d: "EPITOME STEEL PRIVATE LIMITED, 11, 3rd Floor, Astitva Building, Railway Parallel Road, Nehru Nagar, Seshadripuram, Bengaluru – 560020" },
+              {
+  i: MapPin,
+  t: "Head Office",
+  d: (
+    <>
+      <span className="font-semibold">
+        EPITOME STEEL PRIVATE LIMITED
+      </span>
+      <br />
+      11, 3rd Floor, Astitva Building, Railway Parallel Road, Nehru Nagar,
+      Seshadripuram, Bengaluru – 560020
+    </>
+  ),
+},
               { i: Phone, t: "Phone", d: "+91 9538204699" },
               { i: Mail, t: "Email", d: "epitomesteelpvtltd@gmail.com" },
               { i: MessageCircle, t: "WhatsApp", d: "+91 9538204699 — Chat instantly with our engineering desk" },

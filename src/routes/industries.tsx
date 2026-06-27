@@ -99,7 +99,7 @@ const items = [
     i: Building2, 
     t: "Construction", 
     d: "Commercial, mixed-use and high-rise structural packages.",
-    stats: "250+ Projects",
+    stats: "",
     projects: "50+ High-rises | 30+ Malls | 20+ Airports",
     color: "from-blue-500 to-blue-600"
   },
@@ -408,9 +408,9 @@ function IndustriesPage() {
               <div className="flex items-center gap-2">
                 <div className="w-3 h-3 bg-green-500 rounded-full"></div>
 
-                <span className="text-xs font-bold text-slate-800">
+                {/* <span className="text-xs font-bold text-slate-800">
                   250+ Projects
-                </span>
+                </span> */}
               </div>
             </div>
           </div>

@@ -74,11 +74,11 @@ export default function EngineeringStructureSection() {
 
             {/* Stats Cards */}
             <div className="grid grid-cols-3 gap-5">
-              <div className="bg-blue-50 rounded-2xl p-5 text-center">
+              {/* <div className="bg-blue-50 rounded-2xl p-5 text-center">
                 <Building2 className="mx-auto text-blue-600 mb-3" size={32} />
                 <h4 className="text-2xl font-bold text-gray-900">500+</h4>
                 <p className="text-sm text-gray-600">Projects Delivered</p>
-              </div>
+              </div> */}
 
               <div className="bg-orange-50 rounded-2xl p-5 text-center">
                 <Factory className="mx-auto text-orange-600 mb-3" size={32} />

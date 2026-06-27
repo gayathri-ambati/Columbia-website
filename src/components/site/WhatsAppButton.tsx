@@ -26,23 +26,86 @@
 
 
 import { FaWhatsapp } from "react-icons/fa";
+import { useState } from "react";
 
-export function WhatsAppButton() {
+interface WhatsAppButtonProps {
+  numbers?: string[];
+  defaultMessage?: string;
+}
+
+export function WhatsAppButton({ 
+  numbers = ["919538204699"],
+  defaultMessage = "Hi%20Epitome%20Steel%2C%20I%27d%20like%20to%20discuss%20a%20project."
+}: WhatsAppButtonProps) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleWhatsAppClick = (number: string) => {
+    const url = `https://wa.me/${number}?text=${defaultMessage}`;
+    window.open(url, "_blank");
+    setIsOpen(false);
+  };
+
   return (
-    <a
-      href="https://wa.me/919876543210?text=Hi%20Epitome%20Steel%2C%20I%27d%20like%20to%20discuss%20a%20project."
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="WhatsApp Chat"
-      className="fixed bottom-6 right-6 z-50 group"
-    >
-      {/* Pulse Animation */}
-      <span className="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-20"></span>
-
+    <div className="fixed bottom-6 right-6 z-50">
       {/* Main Button */}
-      <div className="relative flex items-center justify-center w-16 h-16 rounded-full bg-[#25D366] shadow-[0_12px_35px_rgba(37,211,102,0.45)] hover:scale-110 transition-all duration-300">
-        <FaWhatsapp className="text-white text-[38px]" />
+      <div className="relative group">
+        {/* Pulse Animation */}
+        <span className="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-20"></span>
+
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="WhatsApp Chat"
+          className="relative flex items-center justify-center w-16 h-16 rounded-full bg-[#25D366] shadow-[0_12px_35px_rgba(37,211,102,0.45)] hover:scale-110 transition-all duration-300"
+        >
+          <FaWhatsapp className="text-white text-[38px]" />
+        </button>
       </div>
-    </a>
+
+      {/* Dropdown Menu for Multiple Numbers */}
+      {isOpen && numbers.length > 1 && (
+        <div className="absolute bottom-20 right-0 bg-white rounded-2xl shadow-2xl p-2 min-w-[220px] animate-in slide-in-from-bottom-4 duration-200">
+          <div className="space-y-1">
+            {numbers.map((number, index) => (
+              <button
+                key={index}
+                onClick={() => handleWhatsAppClick(number)}
+                className="flex items-center gap-3 w-full px-4 py-3 text-left text-sm text-gray-700 hover:bg-[#25D366]/10 rounded-xl transition-all duration-200 group"
+              >
+                <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#25D366]/10 group-hover:bg-[#25D366]/20 transition-colors">
+                  <FaWhatsapp className="text-[#25D366] text-lg" />
+                </div>
+                <div>
+                  <p className="font-medium">+{number}</p>
+                  <p className="text-xs text-gray-500">
+                    {index === 0 ? "Sales Team" : `Support ${index}`}
+                  </p>
+                </div>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Single Number - Direct Click */}
+      {numbers.length === 1 && (
+        <a
+          href={`https://wa.me/${numbers[0]}?text=${defaultMessage}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute inset-0"
+          aria-label="WhatsApp Chat"
+        >
+          {/* The button is already rendered above */}
+        </a>
+      )}
+
+      {/* Close on outside click */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 z-[-1]"
+          onClick={() => setIsOpen(false)}
+        />
+      )}
+    </div>
   );
 }
