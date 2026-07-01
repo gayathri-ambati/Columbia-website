@@ -13,9 +13,9 @@
 // export const Route = createFileRoute("/projects")({
 //   head: () => ({
 //     meta: [
-//       { title: "Projects — Epitome Steel" },
+//       { title: "Projects —  Columbia" },
 //       { name: "description", content: "A gallery of delivered steel and civil engineering projects across industries and geographies." },
-//       { property: "og:title", content: "Projects — Epitome Steel" },
+//       { property: "og:title", content: "Projects —  Columbia" },
 //       { property: "og:description", content: "Selected works from our portfolio of industrial steel structures." },
 //       { property: "og:url", content: "/projects" },
 //     ],
@@ -102,9 +102,9 @@
 // export const Route = createFileRoute("/projects")({
 //   head: () => ({
 //     meta: [
-//       { title: "Projects — Epitome Steel" },
+//       { title: "Projects —  Columbia" },
 //       { name: "description", content: "A gallery of delivered steel and civil engineering projects across industries and geographies." },
-//       { property: "og:title", content: "Projects — Epitome Steel" },
+//       { property: "og:title", content: "Projects —  Columbia" },
 //       { property: "og:description", content: "Selected works from our portfolio of industrial steel structures." },
 //       { property: "og:url", content: "/projects" },
 //     ],
@@ -359,9 +359,9 @@ import { Construction } from "lucide-react";
 export const Route = createFileRoute("/projects")({
   head: () => ({
     meta: [
-      { title: "Projects — Epitome Steel" },
+      { title: "Projects —  Columbia" },
       { name: "description", content: "A gallery of delivered steel and civil engineering projects across industries and geographies." },
-      { property: "og:title", content: "Projects — Epitome Steel" },
+      { property: "og:title", content: "Projects —  Columbia" },
       { property: "og:description", content: "Selected works from our portfolio of industrial steel structures." },
       { property: "og:url", content: "/projects" },
     ],

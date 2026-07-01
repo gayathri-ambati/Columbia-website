@@ -15,7 +15,7 @@
 //                 <span className="relative font-display font-bold text-white tracking-tight">ES</span>
 //               </span>
 //               <div className="leading-tight">
-//                 <div className="font-display font-semibold tracking-tight">Epitome Steel Pvt Ltd</div>
+//                 <div className="font-display font-semibold tracking-tight"> Columbia Pvt Ltd</div>
 //                 <div className="text-[11px] uppercase tracking-[0.2em] text-muted-foreground">Engineering The Future</div>
 //               </div>
 //             </div>
@@ -55,7 +55,7 @@
 //             <ul className="mt-4 space-y-3 text-sm text-foreground/80">
 //               <li className="flex items-start gap-3"><MapPin className="w-4 h-4 text-[--brand] mt-0.5" /> Plot 24, Industrial Estate, Pune, Maharashtra, India</li>
 //               <li className="flex items-center gap-3"><Phone className="w-4 h-4 text-[--brand]" /> +91 98765 43210</li>
-//               <li className="flex items-center gap-3"><Mail className="w-4 h-4 text-[--brand]" /> hello@epitomesteel.com</li>
+//               <li className="flex items-center gap-3"><Mail className="w-4 h-4 text-[--brand]" /> hello@ Columbia.com</li>
 //             </ul>
 //             <Link to="/contact" className="mt-5 inline-flex items-center gap-1.5 btn-orange px-4 py-2 rounded-xl text-[13px] font-semibold">
 //               Start a Project <ArrowUpRight className="w-4 h-4" />
@@ -65,7 +65,7 @@
 
 //         <div className="divider-line my-10" />
 //         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
-//           <div>© {new Date().getFullYear()} Epitome Steel Pvt Ltd. All rights reserved.</div>
+//           <div>© {new Date().getFullYear()}  Columbia Pvt Ltd. All rights reserved.</div>
 //           <div className="flex gap-5">
 //             <a href="#" className="hover:text-[--brand-deep]">Privacy</a>
 //             <a href="#" className="hover:text-[--brand-deep]">Terms</a>
@@ -98,7 +98,7 @@ export function Footer() {
               <div className="relative">
                 <img 
                   src={logo} 
-                  alt="Epitome Steel Logo"
+                  alt=" Columbia Logo"
                   className="w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 object-contain transition-transform duration-300 hover:scale-105"
                 />
               </div>
@@ -154,7 +154,7 @@ export function Footer() {
             <ul className="mt-4 space-y-3 text-sm text-foreground/80">
               <li className="flex items-start gap-3"><MapPin className="w-8 h-8 text-[--brand] mt-0.5" /> 11, 3rd Floor, Astitva Building, Railway Parallel Road, Nehru Nagar, Seshadripuram, Bengaluru – 560020</li>
               <li className="flex items-center gap-3"><Phone className="w-4 h-4 text-[--brand]" /> +91 9538204699</li>
-              <li className="flex items-center gap-3"><Mail className="w-4 h-4 text-[--brand]" /> epitomesteelpvtltd@gmail.com</li>
+              <li className="flex items-center gap-3"><Mail className="w-4 h-4 text-[--brand]" />  Columbiapvtltd@gmail.com</li>
             </ul>
             <Link to="/contact" className="mt-5 inline-flex items-center gap-1.5 btn-orange px-4 py-2 rounded-xl text-[13px] font-semibold">
               Start a Project <ArrowUpRight className="w-4 h-4" />
@@ -164,7 +164,7 @@ export function Footer() {
 
         <div className="divider-line my-10" />
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
-          <div>© {new Date().getFullYear()} Epitome Steel Pvt Ltd. All rights reserved.</div>
+          <div>© {new Date().getFullYear()}  Columbia Pvt Ltd. All rights reserved.</div>
           <div className="flex gap-5">
             <Link
               to="/PrivacyPolicy"

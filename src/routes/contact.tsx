@@ -7,9 +7,9 @@
 // export const Route = createFileRoute("/contact")({
 //   head: () => ({
 //     meta: [
-//       { title: "Contact — Epitome Steel" },
+//       { title: "Contact —  Columbia" },
 //       { name: "description", content: "Talk to our project engineers. Get a quote within 48 hours for steel structures, PEB buildings and industrial construction." },
-//       { property: "og:title", content: "Contact — Epitome Steel" },
+//       { property: "og:title", content: "Contact —  Columbia" },
 //       { property: "og:description", content: "Start your next steel project with us." },
 //       { property: "og:url", content: "/contact" },
 //     ],
@@ -29,7 +29,7 @@
 //             {[
 //               { i: MapPin, t: "Head Office", d: "Plot 24, Industrial Estate, Pune 411019, Maharashtra, India" },
 //               { i: Phone, t: "Phone", d: "+91 98765 43210 · +91 20 4000 1234" },
-//               { i: Mail, t: "Email", d: "hello@epitomesteel.com · projects@epitomesteel.com" },
+//               { i: Mail, t: "Email", d: "hello@ Columbia.com · projects@ Columbia.com" },
 //               { i: MessageCircle, t: "WhatsApp", d: "Chat instantly with our engineering desk" },
 //             ].map((c) => (
 //               <div key={c.t} className="glass-card p-5 flex gap-4">
@@ -104,9 +104,9 @@
 // export const Route = createFileRoute("/contact")({
 //   head: () => ({
 //     meta: [
-//       { title: "Contact — Epitome Steel" },
+//       { title: "Contact —  Columbia" },
 //       { name: "description", content: "Talk to our project engineers. Get a quote within 48 hours for steel structures, PEB buildings and industrial construction." },
-//       { property: "og:title", content: "Contact — Epitome Steel" },
+//       { property: "og:title", content: "Contact —  Columbia" },
 //       { property: "og:description", content: "Start your next steel project with us." },
 //       { property: "og:url", content: "/contact" },
 //     ],
@@ -124,9 +124,9 @@
 //         <div className="mx-auto max-w-7xl px-4 grid lg:grid-cols-12 gap-6">
 //           <div className="lg:col-span-5 space-y-4">
 //             {[
-//               { i: MapPin, t: "Head Office", d: "EPITOME STEEL PRIVATE LIMITED, 11, 3rd Floor, Astitva Building, Railway Parallel Road, Nehru Nagar, Seshadripuram, Bengaluru – 560020" },
+//               { i: MapPin, t: "Head Office", d: " Columbia PRIVATE LIMITED, 11, 3rd Floor, Astitva Building, Railway Parallel Road, Nehru Nagar, Seshadripuram, Bengaluru – 560020" },
 //               { i: Phone, t: "Phone", d: "+91 9538204699" },
-//               { i: Mail, t: "Email", d: "epitomesteelpvtltd@gmail.com" },
+//               { i: Mail, t: "Email", d: " Columbiapvtltd@gmail.com" },
 //               { i: MessageCircle, t: "WhatsApp", d: "+91 9538204699 — Chat instantly with our engineering desk" },
 //             ].map((c) => (
 //               <div key={c.t} className="glass-card p-5 flex gap-4">
@@ -212,9 +212,9 @@
 // export const Route = createFileRoute("/contact")({
 //   head: () => ({
 //     meta: [
-//       { title: "Contact — Epitome Steel" },
+//       { title: "Contact —  Columbia" },
 //       { name: "description", content: "Talk to our project engineers. Get a quote within 48 hours for steel structures, PEB buildings and industrial construction." },
-//       { property: "og:title", content: "Contact — Epitome Steel" },
+//       { property: "og:title", content: "Contact —  Columbia" },
 //       { property: "og:description", content: "Start your next steel project with us." },
 //       { property: "og:url", content: "/contact" },
 //     ],
@@ -287,9 +287,9 @@
 //           {/* Contact Info */}
 //           <div className="lg:col-span-5 space-y-4">
 //             {[
-//               { i: MapPin, t: "Head Office", d: "EPITOME STEEL PRIVATE LIMITED, 11, 3rd Floor, Astitva Building, Railway Parallel Road, Nehru Nagar, Seshadripuram, Bengaluru – 560020" },
+//               { i: MapPin, t: "Head Office", d: " Columbia PRIVATE LIMITED, 11, 3rd Floor, Astitva Building, Railway Parallel Road, Nehru Nagar, Seshadripuram, Bengaluru – 560020" },
 //               { i: Phone, t: "Phone", d: "+91 9538204699" },
-//               { i: Mail, t: "Email", d: "epitomesteelpvtltd@gmail.com" },
+//               { i: Mail, t: "Email", d: " Columbiapvtltd@gmail.com" },
 //               { i: MessageCircle, t: "WhatsApp", d: "+91 9538204699 — Chat instantly with our engineering desk" },
 //             ].map((c) => (
 //               <div key={c.t} className="glass-card p-5 flex gap-4">
@@ -468,9 +468,9 @@
 // export const Route = createFileRoute("/contact")({
 //   head: () => ({
 //     meta: [
-//       { title: "Contact — Epitome Steel" },
+//       { title: "Contact —  Columbia" },
 //       { name: "description", content: "Talk to our project engineers. Get a quote within 48 hours for steel structures, PEB buildings and industrial construction." },
-//       { property: "og:title", content: "Contact — Epitome Steel" },
+//       { property: "og:title", content: "Contact —  Columbia" },
 //       { property: "og:description", content: "Start your next steel project with us." },
 //       { property: "og:url", content: "/contact" },
 //     ],
@@ -618,9 +618,9 @@
 //           {/* Contact Info */}
 //           <div className="lg:col-span-5 space-y-4">
 //             {[
-//               { i: MapPin, t: "Head Office", d: "EPITOME STEEL PRIVATE LIMITED, 11, 3rd Floor, Astitva Building, Railway Parallel Road, Nehru Nagar, Seshadripuram, Bengaluru – 560020" },
+//               { i: MapPin, t: "Head Office", d: " Columbia PRIVATE LIMITED, 11, 3rd Floor, Astitva Building, Railway Parallel Road, Nehru Nagar, Seshadripuram, Bengaluru – 560020" },
 //               { i: Phone, t: "Phone", d: "+91 9538204699" },
-//               { i: Mail, t: "Email", d: "epitomesteelpvtltd@gmail.com" },
+//               { i: Mail, t: "Email", d: " Columbiapvtltd@gmail.com" },
 //               { i: MessageCircle, t: "WhatsApp", d: "+91 9538204699 — Chat instantly with our engineering desk" },
 //             ].map((c) => (
 //               <div key={c.t} className="glass-card p-5 flex gap-4">
@@ -868,9 +868,9 @@ interface ValidationError {
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Epitome Steel" },
+      { title: "Contact —  Columbia" },
       { name: "description", content: "Talk to our project engineers. Get a quote within 48 hours for steel structures, PEB buildings and industrial construction." },
-      { property: "og:title", content: "Contact — Epitome Steel" },
+      { property: "og:title", content: "Contact —  Columbia" },
       { property: "og:description", content: "Start your next steel project with us." },
       { property: "og:url", content: "/contact" },
     ],
@@ -1026,7 +1026,7 @@ function ContactPage() {
   d: (
     <>
       <span className="font-semibold">
-        EPITOME STEEL PRIVATE LIMITED
+         Columbia PRIVATE LIMITED
       </span>
       <br />
       11, 3rd Floor, Astitva Building, Railway Parallel Road, Nehru Nagar,
@@ -1035,7 +1035,7 @@ function ContactPage() {
   ),
 },
               { i: Phone, t: "Phone", d: "+91 9538204699" },
-              { i: Mail, t: "Email", d: "epitomesteelpvtltd@gmail.com" },
+              { i: Mail, t: "Email", d: " Columbiapvtltd@gmail.com" },
               { i: MessageCircle, t: "WhatsApp", d: "+91 9538204699 — Chat instantly with our engineering desk" },
             ].map((c) => (
               <div key={c.t} className="glass-card p-5 flex gap-4">

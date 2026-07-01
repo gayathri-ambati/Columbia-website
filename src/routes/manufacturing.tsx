@@ -10,9 +10,9 @@
 // export const Route = createFileRoute("/manufacturing")({
 //   head: () => ({
 //     meta: [
-//       { title: "Manufacturing Unit — Epitome Steel" },
+//       { title: "Manufacturing Unit —  Columbia" },
 //       { name: "description", content: "Inside our 420,000 sq.ft integrated steel fabrication facility — robotic welding, CNC processing, automated paint line and in-house QA." },
-//       { property: "og:title", content: "Manufacturing — Epitome Steel" },
+//       { property: "og:title", content: "Manufacturing —  Columbia" },
 //       { property: "og:description", content: "A facility engineered for global-grade output." },
 //       { property: "og:url", content: "/manufacturing" },
 //     ],
@@ -100,7 +100,7 @@ import beams from "@/assets/product-beams.jpg";
 export const Route = createFileRoute("/manufacturing")({
   head: () => ({
     meta: [
-      { title: "Manufacturing Unit — Epitome Steel" },
+      { title: "Manufacturing Unit —  Columbia" },
       {
         name: "description",
         content:

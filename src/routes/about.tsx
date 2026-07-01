@@ -12,9 +12,9 @@ import AboutEpitome from "@/components/Aboutcompo/AboutEpitome";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Epitome Steel Pvt Ltd" },
+      { title: "About —  Columbia Pvt Ltd" },
       { name: "description", content: "Three decades of engineering excellence in steel manufacturing, civil structures, and turnkey industrial construction." },
-      { property: "og:title", content: "About — Epitome Steel" },
+      { property: "og:title", content: "About —  Columbia" },
       { property: "og:description", content: "Our story, vision, and the leadership engineering the future of industrial construction." },
       { property: "og:url", content: "/about" },
     ],
@@ -36,7 +36,7 @@ function AboutPage() {
   return (
     <>
       <PageHero
-        eyebrow="About Epitome"
+        eyebrow="About  Columbia"
         title="Two decades of structural excellence."
         subtitle="From a single fabrication bay in Pune to one of the region's most trusted steel and civil structures partners — engineered with precision, delivered with trust."
       />

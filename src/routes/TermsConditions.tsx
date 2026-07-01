@@ -10,7 +10,7 @@ const TermsConditions = () => {
         </h1>
 
         <p className="text-gray-600 leading-8 mb-6">
-          These Terms & Conditions govern your use of the Epitome Steel website
+          These Terms & Conditions govern your use of the  Columbia website
           and services. By accessing this website, you agree to comply with these terms.
         </p>
 
@@ -34,7 +34,7 @@ const TermsConditions = () => {
 
             <p className="text-gray-600 leading-8">
               All website content including text, graphics, logos, and product
-              information belongs to Epitome Steel unless otherwise stated.
+              information belongs to  Columbia unless otherwise stated.
             </p>
           </section>
 
@@ -65,7 +65,7 @@ const TermsConditions = () => {
             </h2>
 
             <p className="text-gray-600 leading-8">
-              Epitome Steel shall not be held liable for indirect damages,
+               Columbia shall not be held liable for indirect damages,
               technical interruptions, or data loss.
             </p>
           </section>
@@ -98,8 +98,8 @@ const TermsConditions = () => {
             </h2>
 
             <div className="text-gray-600 leading-8">
-              <p>Epitome Steel</p>
-              <p>Email: info@epitomesteel.com</p>
+              <p> Columbia</p>
+              <p>Email: info@ Columbia.com</p>
               <p>Phone: +91 XXXXX XXXXX</p>
             </div>
           </section>

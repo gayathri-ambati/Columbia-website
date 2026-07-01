@@ -10,7 +10,7 @@ const PrivacyPolicy = () => {
         </h1>
 
         <p className="text-gray-600 leading-8 mb-6">
-          Welcome to Epitome Steel. Your privacy is important to us.
+          Welcome to  Columbia. Your privacy is important to us.
           This Privacy Policy explains how we collect, use, and protect
           your information when you visit our website or interact with our services.
         </p>
@@ -106,8 +106,8 @@ const PrivacyPolicy = () => {
             </h2>
 
             <div className="text-gray-600 leading-8">
-              <p>Epitome Steel</p>
-              <p>Email: info@epitomesteel.com</p>
+              <p> Columbia</p>
+              <p>Email: info@ Columbia.com</p>
               <p>Phone: +91 XXXXX XXXXX</p>
             </div>
           </section>

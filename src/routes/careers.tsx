@@ -6,9 +6,9 @@ import eng from "@/assets/engineer.jpg";
 export const Route = createFileRoute("/careers")({
   head: () => ({
     meta: [
-      { title: "Careers — Epitome Steel" },
-      { name: "description", content: "Build your career at Epitome Steel. Open roles in engineering, manufacturing, project management and quality." },
-      { property: "og:title", content: "Careers — Epitome Steel" },
+      { title: "Careers —  Columbia" },
+      { name: "description", content: "Build your career at  Columbia. Open roles in engineering, manufacturing, project management and quality." },
+      { property: "og:title", content: "Careers —  Columbia" },
       { property: "og:description", content: "Work with one of the region's most respected steel manufacturers." },
       { property: "og:url", content: "/careers" },
     ],

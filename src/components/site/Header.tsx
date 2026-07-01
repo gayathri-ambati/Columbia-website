@@ -41,7 +41,7 @@
 //               <span className="relative font-display font-bold text-white text-sm tracking-tight">ES</span>
 //             </span>
 //             <span className="hidden sm:flex flex-col leading-tight">
-//               <span className="font-display font-semibold text-[15px] tracking-tight">Epitome Steel</span>
+//               <span className="font-display font-semibold text-[15px] tracking-tight"> Columbia</span>
 //               <span className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">Steel · Civil · Structures</span>
 //             </span>
 //           </Link>
@@ -146,7 +146,7 @@
 //             <div className="relative">
 //               <img 
 //                 src={logo} 
-//                 alt="Epitome Steel Logo"
+//                 alt=" Columbia Logo"
 //                 className="w-12 h-12 md:w-14 md:h-14 object-contain transition-transform duration-300 group-hover:scale-105"
 //               />
 //               {/* Optional: Add a subtle glow effect on hover */}
@@ -260,7 +260,7 @@ export function Header() {
             <div className="relative">
               <img 
                 src={logo} 
-                alt="Epitome Steel Logo"
+                alt=" Columbia Logo"
                 className="w-11 h-11 md:w-13 md:h-13 object-contain transition-transform duration-300 group-hover:scale-105"
               />
               <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-r from-[--brand-sky]/20 to-transparent blur-xl"></div>

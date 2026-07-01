@@ -5,9 +5,9 @@ import { Download, FileText } from "lucide-react";
 export const Route = createFileRoute("/downloads")({
   head: () => ({
     meta: [
-      { title: "Catalogue & Downloads — Epitome Steel" },
+      { title: "Catalogue & Downloads —  Columbia" },
       { name: "description", content: "Download product brochures, technical datasheets, and engineering manuals." },
-      { property: "og:title", content: "Downloads — Epitome Steel" },
+      { property: "og:title", content: "Downloads —  Columbia" },
       { property: "og:description", content: "Brochures, datasheets and product manuals." },
       { property: "og:url", content: "/downloads" },
     ],

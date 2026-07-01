@@ -52,9 +52,9 @@ export function AdminHeader() {
             </button>
 
             <Link to="/dashboard" className="flex items-center gap-3">
-              <img src={logo} alt="Epitome Steel" className="w-9 h-9 object-contain" />
+              <img src={logo} alt=" Columbia" className="w-9 h-9 object-contain" />
               <div className="hidden sm:block">
-                <h1 className="text-base font-bold text-slate-900">Epitome Steel</h1>
+                <h1 className="text-base font-bold text-slate-900"> Columbia</h1>
                 <p className="text-xs text-slate-500">Admin Panel</p>
               </div>
             </Link>
@@ -178,7 +178,7 @@ export function AdminHeader() {
               <div className="flex items-center gap-2">
                 <img src={logo} alt="Logo" className="w-8 h-8 object-contain" />
                 <div>
-                  <span className="text-sm font-bold text-slate-900 block">Epitome Steel</span>
+                  <span className="text-sm font-bold text-slate-900 block"> Columbia</span>
                   <span className="text-xs text-slate-500">Admin Panel</span>
                 </div>
               </div>

@@ -55,7 +55,7 @@ export default function BehindTheScenes() {
             </span>
 
             <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
-              Life at <span className="text-gradient">Epitome Steel</span>
+              Life at <span className="text-gradient"> Columbia</span>
             </h2>
 
             <p className="mt-4 text-gray-300 max-w-2xl">

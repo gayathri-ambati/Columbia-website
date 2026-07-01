@@ -24,7 +24,7 @@ import { API_BASE_URL, API_ENDPOINTS, getApiUrl, getAuthHeaders } from "@/lib/ap
 export const Route = createFileRoute("/dashboard")({
   head: () => ({
     meta: [
-      { title: "Dashboard — Epitome Steel" },
+      { title: "Dashboard —  Columbia" },
       {
         name: "description",
         content: "Manage your projects, track deliveries, and access steel solutions.",

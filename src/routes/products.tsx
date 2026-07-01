@@ -13,9 +13,9 @@
 // export const Route = createFileRoute("/products")({
 //   head: () => ({
 //     meta: [
-//       { title: "Products — Epitome Steel" },
+//       { title: "Products —  Columbia" },
 //       { name: "description", content: "Steel structures, PEB buildings, industrial sheds, roofing systems, fabricated components and civil structural parts." },
-//       { property: "og:title", content: "Products — Epitome Steel" },
+//       { property: "og:title", content: "Products —  Columbia" },
 //       { property: "og:description", content: "Engineered steel products to IS, ASTM and EN standards." },
 //       { property: "og:url", content: "/products" },
 //     ],
@@ -113,13 +113,13 @@ import ProductsCards from "@/components/ProductsCompo/ProductsCards";
 export const Route = createFileRoute("/products")({
   head: () => ({
     meta: [
-      { title: "Products — Epitome Steel" },
+      { title: "Products —  Columbia" },
       {
         name: "description",
         content:
           "Steel structures, PEB buildings, industrial sheds, roofing systems, fabricated components and civil structural parts.",
       },
-      { property: "og:title", content: "Products — Epitome Steel" },
+      { property: "og:title", content: "Products —  Columbia" },
       {
         property: "og:description",
         content: "Engineered steel products to IS, ASTM and EN standards.",

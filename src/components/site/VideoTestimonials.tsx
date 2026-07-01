@@ -10,7 +10,7 @@ const testimonials = [
     video:
       "https://videos.pexels.com/video-files/3209828/3209828-hd_1920_1080_25fps.mp4",
     quote:
-      "Epitome Steel delivered exceptional quality ahead of schedule. Their engineering expertise is unmatched.",
+      " Columbia delivered exceptional quality ahead of schedule. Their engineering expertise is unmatched.",
     thumbnail:
       "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
   },

@@ -18,10 +18,10 @@ import { API_BASE_URL, API_ENDPOINTS, getApiUrl, getAuthHeaders } from "@/lib/ap
 export const Route = createFileRoute("/login")({
   head: () => ({
     meta: [
-      { title: "Login — Epitome Steel" },
+      { title: "Login —  Columbia" },
       {
         name: "description",
-        content: "Secure login portal for Epitome Steel clients and partners.",
+        content: "Secure login portal for  Columbia clients and partners.",
       },
     ],
   }),
@@ -164,7 +164,7 @@ function LoginPage() {
                 <Building2 className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-slate-900">Epitome Steel</h1>
+                <h1 className="text-2xl font-bold text-slate-900"> Columbia</h1>
                 <p className="text-sm text-slate-500">Admin Portal</p>
               </div>
             </div>
@@ -341,7 +341,7 @@ function LoginPage() {
           </div>
 
           <div className="relative z-10 text-sm text-cyan-100/70 border-t border-white/10 pt-6 mt-12">
-            <p>© 2024 Epitome Steel. All rights reserved.</p>
+            <p>© 2024  Columbia. All rights reserved.</p>
           </div>
         </div>
       </motion.div>

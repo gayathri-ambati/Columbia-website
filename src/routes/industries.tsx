@@ -6,9 +6,9 @@
 // export const Route = createFileRoute("/industries")({
 //   head: () => ({
 //     meta: [
-//       { title: "Industries — Epitome Steel" },
+//       { title: "Industries —  Columbia" },
 //       { name: "description", content: "Steel structures and PEB solutions for construction, infrastructure, warehousing, manufacturing, logistics and power plants." },
-//       { property: "og:title", content: "Industries — Epitome Steel" },
+//       { property: "og:title", content: "Industries —  Columbia" },
 //       { property: "og:description", content: "Six sectors. One engineering partner." },
 //       { property: "og:url", content: "/industries" },
 //     ],
@@ -83,9 +83,9 @@ import IndustrySolutions from "@/components/Industriescompo/IndustrySolutions";
 export const Route = createFileRoute("/industries")({
   head: () => ({
     meta: [
-      { title: "Industries — Epitome Steel" },
+      { title: "Industries —  Columbia" },
       { name: "description", content: "Steel structures and PEB solutions for construction, infrastructure, warehousing, manufacturing, logistics and power plants." },
-      { property: "og:title", content: "Industries — Epitome Steel" },
+      { property: "og:title", content: "Industries —  Columbia" },
       { property: "og:description", content: "Six sectors. One engineering partner." },
       { property: "og:url", content: "/industries" },
     ],
@@ -148,7 +148,7 @@ const items = [
 
 
 const testimonials = [
-  { text: "Epitome Steel delivered our warehouse ahead of schedule with exceptional quality.", client: "Reliance Logistics", role: "Operations Head" },
+  { text: " Columbia delivered our warehouse ahead of schedule with exceptional quality.", client: "Reliance Logistics", role: "Operations Head" },
   { text: "The PEB structure for our manufacturing plant exceeded all expectations.", client: "Tata Motors", role: "Plant Manager" },
   { text: "Professional team, excellent quality, and timely completion for our solar project.", client: "Adani Green Energy", role: "Project Director" }
 ];
@@ -511,7 +511,7 @@ function IndustriesPage() {
       </h2>
 
       <p className="text-slate-300 max-w-2xl mx-auto">
-        What makes Epitome Steel the preferred partner for industry leaders
+        What makes  Columbia the preferred partner for industry leaders
       </p>
     </div>
 

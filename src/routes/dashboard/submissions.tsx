@@ -34,7 +34,7 @@ import {
 export const Route = createFileRoute("/dashboard/submissions")({
   head: () => ({
     meta: [
-      { title: "Contact Submissions — Epitome Steel" },
+      { title: "Contact Submissions —  Columbia" },
       {
         name: "description",
         content: "Manage contact form submissions from your website.",
@@ -819,7 +819,7 @@ function SubmissionsPage() {
                         `Thank you for your inquiry regarding ${selectedSubmission.project_type}.\n\n` +
                         `We will get back to you shortly.\n\n` +
                         `Best regards,\n` +
-                        `Epitome Steel Team`
+                        ` Columbia Team`
                       );
                       window.location.href = `mailto:${selectedSubmission.email}?subject=${subject}&body=${body}`;
                     }}

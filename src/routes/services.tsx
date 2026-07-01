@@ -9,9 +9,9 @@ import InfrastructureSection from "@/components/Servicescompo/InfrastructureSect
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services — Epitome Steel" },
+      { title: "Services —  Columbia" },
       { name: "description", content: "End-to-end steel fabrication, structural engineering, industrial construction, project execution, installation and design consultancy." },
-      { property: "og:title", content: "Services — Epitome Steel" },
+      { property: "og:title", content: "Services —  Columbia" },
       { property: "og:description", content: "A complete engineering stack — from concept BIM to crane-on-site erection." },
       { property: "og:url", content: "/services" },
     ],

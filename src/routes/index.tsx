@@ -13,9 +13,9 @@
 // export const Route = createFileRoute("/")({
 //   head: () => ({
 //     meta: [
-//       { title: "Epitome Steel — Engineering Strength. Building the Future." },
+//       { title: " Columbia — Engineering Strength. Building the Future." },
 //       { name: "description", content: "Precision steel manufacturing and civil structural solutions for industrial leaders. PEB buildings, structural steel, sheds, roofing and fabricated components." },
-//       { property: "og:title", content: "Epitome Steel — Engineering Strength. Building the Future." },
+//       { property: "og:title", content: " Columbia — Engineering Strength. Building the Future." },
 //       { property: "og:description", content: "World-class steel manufacturing and civil engineering driven by innovation, trust, and excellence." },
 //       { property: "og:url", content: "/" },
 //     ],
@@ -293,9 +293,9 @@
 // export const Route = createFileRoute("/")({
 //   head: () => ({
 //     meta: [
-//       { title: "Epitome Steel — Engineering Strength. Building the Future." },
+//       { title: " Columbia — Engineering Strength. Building the Future." },
 //       { name: "description", content: "Precision steel manufacturing and civil structural solutions for industrial leaders. PEB buildings, structural steel, sheds, roofing and fabricated components." },
-//       { property: "og:title", content: "Epitome Steel — Engineering Strength. Building the Future." },
+//       { property: "og:title", content: " Columbia — Engineering Strength. Building the Future." },
 //       { property: "og:description", content: "World-class steel manufacturing and civil engineering driven by innovation, trust, and excellence." },
 //       { property: "og:url", content: "/" },
 //     ],
@@ -336,9 +336,9 @@ import EngineeringStructureSection from "@/components/site/EngineeringStructureS
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Epitome Steel — Engineering Strength. Building the Future." },
+      { title: " Columbia — Engineering Strength. Building the Future." },
       { name: "description", content: "Precision steel manufacturing and civil structural solutions for industrial leaders. PEB buildings, structural steel, sheds, roofing and fabricated components." },
-      { property: "og:title", content: "Epitome Steel — Engineering Strength. Building the Future." },
+      { property: "og:title", content: " Columbia — Engineering Strength. Building the Future." },
       { property: "og:description", content: "World-class steel manufacturing and civil engineering driven by innovation, trust, and excellence." },
       { property: "og:url", content: "/" },
     ],

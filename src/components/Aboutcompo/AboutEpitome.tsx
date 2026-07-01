@@ -8,7 +8,7 @@ export default function AboutEpitome() {
           {/* Content */}
           <div>
             <span className="inline-block rounded-full bg-cyan-50 px-4 py-2 text-sm font-semibold text-cyan-700">
-              About Epitome Steel
+              About  Columbia
             </span>
 
             <h2 className="mt-5 text-4xl font-bold leading-tight md:text-5xl">
@@ -21,7 +21,7 @@ export default function AboutEpitome() {
 
             <div className="mt-8 space-y-6">
               <p className="text-lg leading-relaxed text-gray-600">
-                Epitome Steel Private Limited is a specialized Pre-Engineered
+                 Columbia Private Limited is a specialized Pre-Engineered
                 Building (PEB) and structural steel construction company
                 delivering high-quality steel infrastructure solutions across
                 industrial, commercial, and institutional sectors.
@@ -55,7 +55,7 @@ export default function AboutEpitome() {
 
             <img
               src={steelImage}
-              alt="Epitome Steel"
+              alt=" Columbia"
               className="relative h-[500px] w-full rounded-3xl object-cover shadow-2xl"
             />
 

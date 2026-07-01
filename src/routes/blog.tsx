@@ -12,9 +12,9 @@
 // export const Route = createFileRoute("/blog")({
 //   head: () => ({
 //     meta: [
-//       { title: "Insights & News — Epitome Steel" },
-//       { name: "description", content: "Engineering insights, project stories and industry news from the Epitome Steel team." },
-//       { property: "og:title", content: "Insights — Epitome Steel" },
+//       { title: "Insights & News —  Columbia" },
+//       { name: "description", content: "Engineering insights, project stories and industry news from the  Columbia team." },
+//       { property: "og:title", content: "Insights —  Columbia" },
 //       { property: "og:description", content: "Field-tested perspectives on steel, structures and industrial construction." },
 //       { property: "og:url", content: "/blog" },
 //     ],
@@ -109,13 +109,13 @@ import f6 from "@/assets/engineer.jpg";
 export const Route = createFileRoute("/blog")({
   head: () => ({
     meta: [
-      { title: "Insights & News — Epitome Steel" },
+      { title: "Insights & News —  Columbia" },
       {
         name: "description",
         content:
-          "Engineering insights, project stories and industry news from the Epitome Steel team.",
+          "Engineering insights, project stories and industry news from the  Columbia team.",
       },
-      { property: "og:title", content: "Insights — Epitome Steel" },
+      { property: "og:title", content: "Insights —  Columbia" },
       {
         property: "og:description",
         content:
@@ -272,7 +272,7 @@ function BlogPage() {
                   <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
                     Explore practical engineering strategies, fabrication
                     workflows, and industrial construction insights from the
-                    Epitome Steel team.
+                     Columbia team.
                   </p>
 
                   <button className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[--brand-deep] hover:gap-3 transition-all w-fit">

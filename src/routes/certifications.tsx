@@ -5,9 +5,9 @@
 // export const Route = createFileRoute("/certifications")({
 //   head: () => ({
 //     meta: [
-//       { title: "Certifications & Quality — Epitome Steel" },
+//       { title: "Certifications & Quality —  Columbia" },
 //       { name: "description", content: "ISO 9001, ISO 14001, OHSAS 18001 certified. AWS, EN 1090 weld qualifications. Documented quality assurance." },
-//       { property: "og:title", content: "Certifications — Epitome Steel" },
+//       { property: "og:title", content: "Certifications —  Columbia" },
 //       { property: "og:description", content: "Verified, audited and continuously improved." },
 //       { property: "og:url", content: "/certifications" },
 //     ],
@@ -86,9 +86,9 @@ import {
 export const Route = createFileRoute("/certifications")({
   head: () => ({
     meta: [
-      { title: "Certifications & Quality — Epitome Steel" },
+      { title: "Certifications & Quality —  Columbia" },
       { name: "description", content: "ISO 9001, ISO 14001, OHSAS 18001 certified. AWS, EN 1090 weld qualifications. Documented quality assurance." },
-      { property: "og:title", content: "Certifications — Epitome Steel" },
+      { property: "og:title", content: "Certifications —  Columbia" },
       { property: "og:description", content: "Verified, audited and continuously improved." },
       { property: "og:url", content: "/certifications" },
     ],
