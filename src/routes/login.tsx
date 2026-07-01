@@ -2,6 +2,8 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import LogoImage from "@/assets/newlogo.png";
+
 import { 
   Mail, 
   Lock, 
@@ -159,7 +161,7 @@ function LoginPage() {
         {/* Left Column - Login Form */}
         <div className="p-8 md:p-12 lg:p-16">
           <div className="mb-10">
-            <div className="flex items-center gap-3 mb-6">
+            {/* <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center shadow-lg shadow-cyan-500/25">
                 <Building2 className="w-6 h-6 text-white" />
               </div>
@@ -167,11 +169,26 @@ function LoginPage() {
                 <h1 className="text-2xl font-bold text-slate-900"> Columbia</h1>
                 <p className="text-sm text-slate-500">Admin Portal</p>
               </div>
-            </div>
+            </div> */}
+
+       <div className="flex items-center gap-3 mb-6">
+  <div className="w-12 h-12 rounded-2xl flex items-center justify-center overflow-hidden shadow-lg shadow-cyan-500/25">
+    <img 
+      src={LogoImage} 
+      alt="Columbia Logo" 
+      className="w-full h-full object-contain" 
+    />
+  </div>
+  <div>
+    <h1 className="text-2xl font-bold text-slate-900">Columbia</h1>
+    <p className="text-sm text-slate-500">Admin Portal</p>
+  </div>
+</div>
 
             <h2 className="text-3xl font-bold text-slate-900">Admin Login</h2>
             <p className="mt-2 text-slate-600">Sign in to manage your projects and submissions.</p>
           </div>
+        
 
           {/* Error Message */}
           {error && (

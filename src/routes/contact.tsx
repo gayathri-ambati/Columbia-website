@@ -1035,7 +1035,7 @@ function ContactPage() {
   ),
 },
               { i: Phone, t: "Phone", d: "+91 9538204699" },
-              { i: Mail, t: "Email", d: " Columbiapvtltd@gmail.com" },
+              { i: Mail, t: "Email", d: " columbiapvtltd@gmail.com" },
               { i: MessageCircle, t: "WhatsApp", d: "+91 9538204699 — Chat instantly with our engineering desk" },
             ].map((c) => (
               <div key={c.t} className="glass-card p-5 flex gap-4">
