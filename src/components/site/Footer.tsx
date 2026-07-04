@@ -83,7 +83,7 @@
 
 import { Link } from "@tanstack/react-router";
 import { Mail, Phone, MapPin, Linkedin, Facebook, Instagram, ArrowUpRight } from "lucide-react";
-import logo from "../../assets/newlogo.png";
+import logo from "../../assets/columbialogo1.png";
 
 export function Footer() {
   return (
@@ -95,13 +95,13 @@ export function Footer() {
           <div className="lg:col-span-4">
             <div className="flex items-center gap-3">
               {/* Logo Image - Increased Size */}
-              <div className="relative">
-                <img 
-                  src={logo} 
-                  alt=" Columbia Logo"
-                  className="w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 object-contain transition-transform duration-300 hover:scale-105"
-                />
-              </div>
+             <div className="relative">
+  <img
+    src={logo}
+    alt="Columbia Logo"
+    className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 object-contain transition-transform duration-300 hover:scale-105"
+  />
+</div>
             </div>
             <p className="mt-5 text-sm text-muted-foreground max-w-sm">
               A precision-driven manufacturer of steel structures, PEB systems and civil

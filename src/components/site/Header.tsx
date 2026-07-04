@@ -220,7 +220,7 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X, Home, Info, Package, Settings, FolderKanban, Building2, Factory, Award, Newspaper, Briefcase, Phone } from "lucide-react";
-import logo from "../../assets/newlogo.png";
+import logo from "../../assets/columbialogo1.png";
 
 const NAV = [
   { to: "/", label: "Home", icon: Home },
@@ -261,7 +261,7 @@ export function Header() {
               <img 
                 src={logo} 
                 alt=" Columbia Logo"
-                className="w-11 h-11 md:w-13 md:h-13 object-contain transition-transform duration-300 group-hover:scale-105"
+                className="w-16 h-16 md:w-20 md:h-20 object-contain transition-transform duration-300 group-hover:scale-105"
               />
               <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-r from-[--brand-sky]/20 to-transparent blur-xl"></div>
             </div>
